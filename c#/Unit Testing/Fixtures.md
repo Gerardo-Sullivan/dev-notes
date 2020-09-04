@@ -44,6 +44,7 @@ public class ItemFixture {
     public ItemFixture WithValidExpiry()
     {
         _item.ExpiryDate = DateTime.Now().AddDays(-1);
+        return this;
     }
 
     public Item Build()
