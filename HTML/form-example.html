@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+
+<body>
+    <form name="signup" action="/signup" method="POST">
+        <div name="credentials">
+            <label for="form-username">Username</label>
+            <input type="text" name="username" id="form-username">
+            <label for="form-password">Password</label>
+            <input type="password" name="password" id="form-password">
+        </div>
+        <div name="personal-details">
+            <label for="form-birth-date">Birth Date</label>
+            <input type="date" name="birth-date" id="form-birth-date">
+            <label for="form-gender">Gender</label>
+            <select name="gender" id="form-gender">
+                <option value="male">Male</option>
+                <option value="female">female</option>
+                <option value="non-binary">Non Binary</option>
+            </select>
+            <div>
+                <label for="form-bike">I own a bike</label>
+                <input type="checkbox" name="vehicle" value="bike" id="form-bike">
+                <label for="form-car">I own a car</label>
+                <input type="checkbox" name="vehicle" value="car" id="form-car" checked>
+            </div>
+            <div>
+                <label>Marital Status:</label>
+                <label for="form-married">Married</label>
+                <input type="radio" name="marital-status" value="married" id="form-married">
+                <label for="form-single">Single</label>
+                <input type="radio" name="marital-status" value="single" id="form-single">
+            </div>
+        </div>
+        <div>
+            <textarea name="comments" rows="10" cols="30"></textarea>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+
+</html>
